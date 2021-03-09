@@ -1,4 +1,4 @@
-API_KEY = "b6b681c66261ada6997cf8236466475d";
+API_KEY = "";
 urlCurrent = "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + long + "&units=metric&lang=en&appid=" + API_KEY;
 
 if(isPost == true){
