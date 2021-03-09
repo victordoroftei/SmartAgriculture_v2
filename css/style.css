@@ -1,0 +1,160 @@
+body{
+    margin:0;
+    padding: 0;
+    background-image: url('img/signup2.jpg');
+    background-size:cover;
+}
+#form input[type=text], #form input[type=password]{
+     border:none;
+     border-bottom: 1px solid white;
+     margin-bottom: 2rem;
+     background-color: transparent;
+     outline: none;
+     color: white;
+     display: 16px;
+ }
+ .form-control:focus {
+     border-color: none;
+     -webkit-box-shadow: none;
+     box-shadow: none;
+ }
+ ::placeholder{
+     color:white;
+ }
+ @media only screen and (min-width : 721px) {
+     #container{
+         transform: translate(50%,45%);
+     }
+ }
+ @media only screen and (max-width : 720px) {
+     #container{
+         transform: translate(50%,20%);
+     }
+ }
+ .errorpopup{
+     margin: 1rem;
+     width: 90%;
+     height: auto;
+     background-color:rgba(0,0,0,0.5);
+     z-index: -2;
+ }
+
+ .errorpopup p{
+     color: red;
+     font-size: 1rem;
+     padding: 0.5rem;
+     z-index: -2;
+ } 
+
+ html, body {
+    height: 100%;
+  }
+  * {
+    box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+
+
+  .navigg {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 16em;
+    background-color: #353441;
+    transition: transform 150ms ease-out;
+    transform: translateX(-16em);
+  }
+  .navigg.menu-active {
+    transform: translateX(0);
+  }
+  .navigg.menu-hover {
+    transform: translateX(-15em);
+  }
+  .navigg h1 {
+    z-index: 100;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -65px;
+    height: 60px;
+    width: 65px;
+    line-height: 60px;
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #353441;
+    cursor: pointer;
+  }
+  .navigg h1:hover {
+    color: #353441;
+    background: #fff;
+  }
+  .navigg ul {
+    margin: 0;
+    padding: 0;
+  }
+  .navigg li {
+    display: inline-block;
+    padding: 0 1em;
+    width: 100%;
+    height: 60px;
+    color: #9dc6d1;
+    line-height: 60px;
+    background-color: #353441;
+      transition: all 0.5s ease-in;
+  }
+  .navigg li:nth-of-type(2n) {
+    background-color: #3a3947;
+  }
+  .navigg li:hover {
+    background: ORANGERED;
+      color: white;
+       
+  }
+  main {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(ji.jpeg);
+    transform-origin: 0% 50%;
+      background-size: cover;
+  }
+  main:after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right, transparent, rgba(33, 33, 45, .5));
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 150ms ease-out, visibility 0s 150ms;
+  }
+  main.menu-active {
+    border-radius: 0.001px;
+    transform: translateX(16em) rotateY(15deg);
+  }
+  main.menu-active:after {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 150ms ease-out, visibility 0s;
+  }
+  main.menu-hover {
+    border-radius: 0.001px;
+    transform: translateX(1em) rotateY(1deg);
+  }
