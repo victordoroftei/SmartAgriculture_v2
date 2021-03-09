@@ -1,4 +1,4 @@
-API_KEY = "b6b681c66261ada6997cf8236466475d";
+API_KEY = "";
 const fivedays = ( (new Date(2019,10,10,0,0,0,0).getTime()) - (new Date(2019,10,5,0,0,0,0).getTime()) ) / 1000;
 const oneday = ( (new Date(2019,10,10,0,0,0,0).getTime()) - (new Date(2019,10,9,0,0,0,0).getTime()) ) / 1000;
 
